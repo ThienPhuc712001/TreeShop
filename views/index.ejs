@@ -1,0 +1,15 @@
+<!-- views/index.ejs -->
+<h1>All Trees</h1>
+<ul>
+  <% trees.forEach(tree => { %>
+    <li>
+      <h2><%= tree.treename %></h2>
+      <p><%= tree.description %></p>
+      <% if (tree.image) { %>
+        <img src="/uploads/<%= tree.image %>" alt="Tree Image" width="100">
+      <% } %>
+    </li>
+  <% }) %>
+</ul>
+<a href="/add">Add New Tree</a>
+

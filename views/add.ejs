@@ -1,0 +1,8 @@
+<!-- views/add.ejs -->
+<h1>Add New Tree</h1>
+<form action="/add" method="POST" enctype="multipart/form-data">
+  <input type="text" name="treename" placeholder="Tree Name" required><br><br>
+  <textarea name="description" placeholder="Description" required></textarea><br><br>
+  <input type="file" name="image"><br><br>
+  <button type="submit">Add Tree</button>
+</form>
